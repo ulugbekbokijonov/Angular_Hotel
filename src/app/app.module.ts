@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import {AccomodationComponent} from './accomodation/accomodation.component';
 import {RoomComponent} from './accomodation/room/room.component';
@@ -24,6 +25,10 @@ import {OffersComponent} from './offers/offers.component';
 import {WeddingsComponent} from './weddings/weddings.component';
 import {ThaiWeddingsComponent} from './weddings/thai-weddings/thai-weddings.component';
 import {WesternWeddingsComponent} from './weddings/western-weddings/western-weddings.component'
+import {HeaderComponent} from './navigation/header/header.component'
+import {NavtabsComponent } from './navigation/navtabs/navtabs.component';
+import {SidenavListComponent} from './navigation/sidenav-list/sidenav-list.component'
+
 
 
 @NgModule({
@@ -46,7 +51,10 @@ import {WesternWeddingsComponent} from './weddings/western-weddings/western-wedd
     OffersComponent,
     WeddingsComponent,
     ThaiWeddingsComponent,
-    WesternWeddingsComponent
+    WesternWeddingsComponent,
+    HeaderComponent,
+    NavtabsComponent,
+    SidenavListComponent
 
     
   ],
@@ -54,7 +62,8 @@ import {WesternWeddingsComponent} from './weddings/western-weddings/western-wedd
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
